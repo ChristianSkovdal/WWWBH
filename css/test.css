@@ -1,0 +1,40 @@
+/*.ultra-icon img {
+    /*background-image: url(/images/ultra.png);
+    background-repeat: no-repeat;*/
+    cursor: pointer;
+    display: block;
+    left: 50px;
+}*/
+
+.ultra-icon hover {
+    background-color:aquamarine;
+}
+
+
+.bk-main {
+    background-color: aliceblue;
+}
+
+.navi-bar {
+    background-image: url(/images/bk.png);
+    background-repeat: repeat-y;
+}
+
+.normal img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+    margin-left: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.pressed img {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/*.ultra-icon img:hover {
+    -webkit-filter: brightness(170%);
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+}*/
