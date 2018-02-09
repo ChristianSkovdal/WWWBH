@@ -18,6 +18,7 @@
 .navi-bar {
     background-image: url(/images/bk.png);
     background-repeat: repeat-y;
+    /*background-color:transparent;*/
 }
 
 .normal img {

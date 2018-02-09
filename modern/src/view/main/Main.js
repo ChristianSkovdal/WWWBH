@@ -46,12 +46,17 @@ Ext.define('MainController', {
                 Ext.ComponentQuery.query('imgbtn').filter(r => r != btn).forEach(r => r.setPressed(false));
                 this.loadHtml(btn);
             }
+        },
+        'htmlcntr': {
+            painted: function () {
+                //debugger;
+            }
         }
     },
 
     loadHtml(btn) {
-        debugger;
-        this.getView().setActiveItem({
+
+        this.lookup('wrapper').setActiveItem({
             xtype: btn.type,
             config: btn.cfg
         });
@@ -63,6 +68,10 @@ Ext.define('MainController', {
 Ext.define('HtmlContainer', {
     extend: 'Ext.Container',
     xtype: 'htmlcntr',
+
+    style:'background-color:transparent;',
+    html: 'Dette er en test',
+
     applySrc(value) {
         debugger;
         this.setLoader({
@@ -70,10 +79,7 @@ Ext.define('HtmlContainer', {
             url: value
         });
     }
-    //loader: {
-    //    url: this.config.src,
-    //    autoLoad: true
-    //}
+ 
 });
 
 Ext.define('WWWBH.view.main.Main', {
@@ -89,27 +95,29 @@ Ext.define('WWWBH.view.main.Main', {
 
     controller: 'main',
     viewModel: 'main',
-    layout: {
-        type: 'card',
-        animation: {
-            duration: 300,
-            easing: 'ease-out',
-            type: 'slide',
-            direction: 'left'
-        }
-    },
+    layout: 'fit',
 
     items: [
         {
             xtype: 'container',
             cls: 'bk-main',
-            layout: 'fit',
+            reference: 'wrapper',
+
+            layout: {
+                type: 'card',
+                animation: {
+                    duration: 100,
+                    easing: 'ease-out',
+                    type: 'slide',
+                    direction: 'left'
+                }
+            },
 
             items: [
                 {
                     xtype: 'container',
                     docked: 'left',
-                    width: 120,
+                    //width: 120,
                     cls: 'navi-bar',
                     scrollable: true,
 
@@ -151,44 +159,5 @@ Ext.define('WWWBH.view.main.Main', {
             ]
         }
     ]
-
-
-    //defaults: {
-    //    tab: {
-    //        iconAlign: 'top'
-    //    }
-    //},
-
-    //tabBarPosition: 'left',
-
-    //items: [
-    //    // TODO - Replace the content of this view to suit the needs of your application.
-    //    {
-    //        title: 'Home',
-    //        iconCls: 'x-fa fa-home',
-    //        layout: 'fit',
-    //        // The following grid shares a store with the classic version's grid as well!
-    //        items: [{
-    //            xtype: 'mainlist'
-    //        }]
-    //    },{
-    //        title: 'Users',
-    //        iconCls: 'x-fa fa-user',
-    //        bind: {
-    //            html: '{loremIpsum}'
-    //        }
-    //    },{
-    //        title: 'Groups',
-    //        iconCls: 'x-fa fa-users',
-    //        bind: {
-    //            html: '{loremIpsum}'
-    //        }
-    //    },{
-    //        title: 'Settings',
-    //        iconCls: 'x-fa fa-cog',
-    //        bind: {
-    //            html: '{loremIpsum}'
-    //        }
-    //    }
-    //]
+    
 });
