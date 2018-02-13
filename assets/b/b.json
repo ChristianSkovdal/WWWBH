@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Desert",
+    "img": "desert.jpg"
+  },
+  {
+    "name": "Jellyfish",
+    "img": "Jellyfish.jpg"
+  },
+  {
+    "name": "Lighthouse",
+    "img": "Lighthouse.jpg"
+  },
+  {
+    "name": "Tulips",
+    "img": "Tulips.jpg"
+  }
+
+]

@@ -2,12 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\controls",
+    "\\app\\view",
     "\\css",
-    "\\modern",
-    "\\modern\\src",
-    "\\modern\\src\\view",
-    "\\modern\\src\\view\\main"
+    "\\html"
   ],
-  "SelectedNode": "\\modern\\src\\view\\main\\Main.js",
+  "SelectedNode": "\\app\\view\\PublicationViewer.js",
   "PreviewInSolutionExplorer": false
 }

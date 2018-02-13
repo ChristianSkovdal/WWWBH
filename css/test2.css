@@ -1,0 +1,43 @@
+﻿/*.x-toolbar .x-button {
+    border: 1px solid #999999;
+    border-top-color: #a6a6a6;
+    color: black;
+    background-color: red;
+}*/
+.topbar {
+    background-color: #424242 !important;
+}
+
+
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    letter-spacing: 3px !important;
+    color: white !important;
+    font-weight: !important;
+}
+
+.main {
+    background-color: #e2e2e2 !important;
+}
+
+.container {
+    width: 100%;
+    height: 150px;
+    /*background-image: linear-gradient( rgba(20,20,20, .5), rgba(20,20,20, .5)), url("/assets/p/desert.jpg");*/
+    /*background-image: url("/assets/p/desert.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.x-fa {
+    color: white !important;
+}
+​ /*.x-fa .social-media {
+    font-size: 45px !important;
+    color: red;
+}*/
+
+.x-fa .btnhover {
+    color: red !important;
+}

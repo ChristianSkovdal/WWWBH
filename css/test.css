@@ -7,12 +7,12 @@
 }*/
 
 .ultra-icon hover {
-    background-color:aquamarine;
+    background-color: aquamarine;
 }
 
 
 .bk-main {
-    background-color: lightblue;
+    background-color: #f6f6f6;
 }
 
 .navi-bar-v {
@@ -43,4 +43,16 @@
     -webkit-filter: brightness(170%);
     -webkit-filter: drop-shadow(5px 5px 5px #222 );
     filter: drop-shadow(5px 5px 5px #222);
+}*/
+
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+
+.x-panelheader-body-el {
+    background-color: #4d4040 !important;
+}
+
+/*.psection .x-titlebar .x-innerhtml {
+    
 }*/

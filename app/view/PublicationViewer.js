@@ -1,3 +1,18 @@
+Ext.define('WWWBH.view.PublicationSection', {
+    extend: 'Ext.Panel',
+    xtype: 'psection',
+
+    layout: 'fit',
+    cls: 'psection',
+
+    items: [
+
+        {
+            xtype: 'dataview',
+        }
+    ]
+});
+
 Ext.define('WWWBH.view.PublicationViewer', {
     extend: 'Ext.Container',
     xtype: 'pview',
@@ -12,7 +27,13 @@ Ext.define('WWWBH.view.PublicationViewer', {
             margin: 20,
             shadow: true,
             style: 'background: white',
-            html: 'fdafdsf',
+
+            items: [
+                {
+                    xtype: 'psection',
+                    title: 'Tilg&aelig;ngelighed'
+                }
+            ]
         }
     ]
 });

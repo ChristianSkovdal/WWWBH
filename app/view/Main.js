@@ -3,7 +3,7 @@ Ext.define('WWWBH.view.MainController', {
     alias: 'controller.main',
 
     control: {
-        '#': {
+        'main': {
             painted: function () {
                 let home = this.lookup('publications');
                 home.setPressed(true);
@@ -19,54 +19,6 @@ Ext.define('WWWBH.view.MainController', {
     },
 });
 
-Ext.define('WWWBH.view.HtmlContainer', {
-    extend: 'Ext.Container',
-    xtype: 'htmlcntr',
-
-    layout: 'fit',
-    style:'background:transparent;',
-
-    config: {
-        url: false,
-        bodyStyle: null
-    },
-
-    updateBodyStyle: function (style) {
-        this.down('#body').setStyle(style);;
-    },
-
-    updateUrl: function (url) {
-        if (url) {
-            this.setMasked({
-                xtype: 'loadmask', message: 'Loading...'
-            });
-            Ext.Ajax.request({
-                url: url,
-                scope: this,
-                success: function (response) {
-                    this.down('#body').setHtml(response.responseText);
-                    this.setMasked(false);
-                }
-            });
-        }
-    },
-    reload: function () {
-        this.updateUrl(this.getUrl());
-    },
-
-    items: [
-        {
-            itemId: 'body',
-            xtype: 'container',
-            margin: 20,        
-            shadow: true,
-            style: 'background:yellow;',
-            scrollable: true,
-            padding: 20
-        }
-    ]
-});
-
 Ext.define('WWWBH.view.Main', {
     extend: 'Ext.Panel',
     xtype: 'app-main',
@@ -77,11 +29,11 @@ Ext.define('WWWBH.view.Main', {
         'Ext.MessageBox',
         'Ext.layout.Card',
         'WWWBH.controls.ImageButton',
-        'WWWBH.view.PublicationViewer'
+        'WWWBH.view.PublicationViewer',
+        'WWWBH.controls.HtmlContainer'
     ],
 
     controller: 'main',
-    //viewModel: 'main',
     layout: 'fit',
 
     items: [
@@ -135,7 +87,6 @@ Ext.define('WWWBH.view.Main', {
                         wide: {
                             docked: 'left',
                             cls: 'navi-bar-v',
-                            width: 120,
                             layout: 'vbox',
                         },
                         tall: {
@@ -158,7 +109,7 @@ Ext.define('WWWBH.view.Main', {
 
                             },
                             tall: {
-                                flex: 1,
+                                //flex: 1,
                             }
                         },
                     },
@@ -197,7 +148,6 @@ Ext.define('WWWBH.view.Main', {
                 {
                     xtype: 'pview',
                     reference: 'pageC',
-
                 },
             ]
         }

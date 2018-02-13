@@ -29,7 +29,6 @@ Ext.application({
             }
         );
     },
-
     // The name of the initial view to create.
-    mainView: 'WWWBH.view.Main'
+    mainView: Ext.mainView
 });
