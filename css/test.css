@@ -1,6 +1,6 @@
 /*.ultra-icon img {
     /*background-image: url(/images/ultra.png);
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     cursor: pointer;
     display: block;
     left: 50px;
@@ -12,13 +12,18 @@
 
 
 .bk-main {
-    background-color: aliceblue;
+    background-color: lightblue;
 }
 
-.navi-bar {
+.navi-bar-v {
     background-image: url(/images/bk.png);
     background-repeat: repeat-y;
-    /*background-color:transparent;*/
+}
+
+.navi-bar-h {
+    background-image: url(/images/bk.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 
 .normal img {

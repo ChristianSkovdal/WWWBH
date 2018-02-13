@@ -31,5 +31,5 @@ Ext.application({
     },
 
     // The name of the initial view to create.
-    mainView: 'WWWBH.view.main.Main'
+    mainView: 'WWWBH.view.Main'
 });

@@ -27,12 +27,14 @@
      * with "sencha workspace install". See "sencha help workspace install" for more information.
      *
      */
-    "frameworks": {        "ext": {
-            "path":"ext",
-            "version":"6.5.3.57"
-        }
+  "frameworks": {
+    
+    "ext": {
+      "path": "ext",
+      "version": "6.5.3.57"
+    }
 
-    },
+  },
 
     /**
      * This is the folder for build outputs in the workspace.
