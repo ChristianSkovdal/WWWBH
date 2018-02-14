@@ -14,7 +14,7 @@
 });
 
 Ext.define('WWWBH.view.Main2', {
-    extend: 'Ext.Panel',
+    extend: 'Ext.Container',
     xtype: 'main2',
 
     controller: 'main2',
@@ -27,6 +27,7 @@ Ext.define('WWWBH.view.Main2', {
 
     controller: 'main',
     layout: 'fit',
+    baseCls: 'main',
 
     items: [
         {
@@ -35,11 +36,6 @@ Ext.define('WWWBH.view.Main2', {
             cls: 'topbar',
             height: 50,
             docked: 'top',
-
-            listeners: {
-                painted: function () {
-                }
-            },
 
             plugins: 'responsive',
             responsiveConfig: {
@@ -149,7 +145,7 @@ Ext.define('WWWBH.view.Main2', {
                         margin: 5
                     },
                     items: [
-                        {                            
+                        {
                             iconCls: 'x-fa fa-facebook social-media',
                         },
                         {
@@ -164,9 +160,37 @@ Ext.define('WWWBH.view.Main2', {
         },
         {
             xtype: 'container',
-            //style: 'background: url(/assets/p/desert.jpg);',
-            html: '<div class="container"></div>​'
-        }
+            height: 600,
+            //html: '<div class="section2">afds</div>​',
+            flex: 1,
+            //listeners: {
+            //    resize: function (cmp, w, h, ow, oh) {
+            //        if (!ow) {
+            //            this.setStyle({
+            //                backgroundImage: 'url(/assets/p/desert.jpg)',
+            //                height: h.toString(),
+            //                backgroundSize: 'cover',
+            //                backgroundRepeat: 'no-repeat'
+            //            });
+
+            //            let img = ['tulips.jpg', 'tulips.jpg', 'tulips.jpg', 'tulips.jpg', 'tulips.jpg'];
+            //            for (var i = 0; i < 5; i++) {
+            //                cmp.getParent().add({
+            //                    xtype: 'container',
+            //                    height: 300,
+            //                    style: `background: url(/assets/p${img[i]}); cover no-repeat`
+            //                });
+            //            }
+            //        }
+            //    }
+            //}
+
+        },
+        //{
+        //    xtype: 'container',
+        //    height: 400,
+        //    html: '<div class="section1">afds</div>​',
+        //}
 
     ]
 

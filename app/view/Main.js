@@ -21,9 +21,7 @@ Ext.define('WWWBH.view.MainController', {
 
 Ext.define('WWWBH.view.Main', {
     extend: 'Ext.Panel',
-    xtype: 'app-main',
-
-    controller: 'main',
+    xtype: 'main',
 
     requires: [
         'Ext.MessageBox',
@@ -53,7 +51,7 @@ Ext.define('WWWBH.view.Main', {
                             duration: 300,
                             easing: 'ease-in',
                             type: 'slide',
-                            direction: 'right'
+                            direction: 'left'
                         }
                     },
                 },
@@ -99,6 +97,8 @@ Ext.define('WWWBH.view.Main', {
                     defaults: {
                         xtype: 'imgbtn',
                         margin: 20,
+                        width: 80,
+                        height:80,
                         cls: 'ultra-icon normal',
                         normalCls: 'normal',
                         pressedCls: 'pressed',

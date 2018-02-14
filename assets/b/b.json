@@ -1,11 +1,12 @@
 [
   {
-    "name": "Desert",
+    "name": "Donald Brown",
     "img": "desert.jpg"
   },
   {
-    "name": "Jellyfish",
-    "img": "Jellyfish.jpg"
+    "name": "Goff Smith",
+    "img": "Jellyfish.jpg",
+    "category": "Seasonals"
   },
   {
     "name": "Lighthouse",
@@ -14,6 +15,48 @@
   {
     "name": "Tulips",
     "img": "Tulips.jpg"
+  },
+  {
+    "name": "Desert",
+    "img": "desert.jpg"
+  },
+  {
+    "name": "Jellyfish",
+    "img": "Jellyfish.jpg",
+    "category": "Seasonals"
+  },
+  {
+    "name": "Lighthouse",
+    "img": "Lighthouse.jpg",
+    "category": "Seasonals"
+  },
+  {
+    "name": "Tulips",
+    "img": "Tulips.jpg",
+    "category": "Seasonals"
+  },
+  {
+    "name": "Tulips",
+    "img": "Tulips.jpg",
+    "category": "Seasonals"
+  },
+  {
+    "name": "Desert",
+    "img": "desert.jpg"
+  },
+  {
+    "name": "Jellyfish",
+    "img": "Jellyfish.jpg",
+    "category": "Speciality"
+  },
+  {
+    "name": "Lighthouse",
+    "img": "Lighthouse.jpg"
+  },
+  {
+    "name": "Tulips",
+    "img": "Tulips.jpg",
+    "category": "Speciality"
   }
 
 ]
